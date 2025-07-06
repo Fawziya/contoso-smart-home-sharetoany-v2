@@ -115,7 +115,7 @@ const AudioPlayer: React.FC<AudioPlayerProps> = ({ productId, productName, local
           disabled={isLoading || hasError}
           className={`flex items-center justify-center w-10 h-10 rounded-full border-2 transition-colors ${
             hasError
-              ? 'border-red-300 bg-red-50 cursor-not-allowed'
+              ? 'border-orange-300 bg-orange-50 cursor-not-allowed'
               : isLoading
               ? 'border-gray-300 bg-gray-50 cursor-wait'
               : 'border-secondary-dark text-secondary-dark hover:bg-secondary-dark hover:text-white'
@@ -132,8 +132,8 @@ const AudioPlayer: React.FC<AudioPlayerProps> = ({ productId, productName, local
         </button>
 
         {hasError ? (
-          <span className="text-sm text-red-600">
-            {currentLanguage === 'zh' ? '音频文件不可用' : 'Audio file not available'}
+          <span className="text-sm text-orange-600">
+            {currentLanguage === 'zh' ? 'TTS音频功能即将推出' : 'TTS audio feature coming soon'}
           </span>
         ) : (
           <span className="text-sm text-gray-600">

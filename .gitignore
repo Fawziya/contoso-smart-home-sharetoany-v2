@@ -34,3 +34,6 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# TTS audio files (temporarily excluded until proper generation)
+/public/audio/*.wav
