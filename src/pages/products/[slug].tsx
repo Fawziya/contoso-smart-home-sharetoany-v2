@@ -9,6 +9,7 @@ import { Carousel } from 'react-responsive-carousel';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import clsx from 'clsx';
 import ShareButtons from '@/components/ShareButtons';
+import AudioPlayer from '@/components/AudioPlayer';
 
 type Section = 'overview' | 'features' | 'reviews' | 'faq' | 'specs' | 'warranty' | 'guide';
 
@@ -213,6 +214,14 @@ export default function ProductDetail() {
           {/* 右侧内容区域 */}
           <div className="lg:col-span-7">
             <div className="bg-white rounded-xl shadow-sm p-8">
+              {/* Audio Player for Meowtica Smart Hub product overview */}
+              {product.id === 1 && currentSection === 'overview' && (
+                <AudioPlayer 
+                  productId={product.id}
+                  productName={product.name}
+                  locale={locale}
+                />
+              )}
               <div className="prose max-w-none">
                 <ReactMarkdown>{markdownSections[currentSection]}</ReactMarkdown>
               </div>
