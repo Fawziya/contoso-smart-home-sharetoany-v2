@@ -9,6 +9,7 @@ import { Carousel } from 'react-responsive-carousel';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import clsx from 'clsx';
 import ShareButtons from '@/components/ShareButtons';
+import CountdownBanner from '@/components/CountdownBanner';
 
 type Section = 'overview' | 'features' | 'reviews' | 'faq' | 'specs' | 'warranty' | 'guide';
 
@@ -146,6 +147,11 @@ export default function ProductDetail() {
             </p>
           </div>
         </div>
+
+        {/* Countdown Banner for Meowtica Smart Hub (Product ID 1) */}
+        {product.id === 1 && (
+          <CountdownBanner />
+        )}
 
         {/* 导航标签 */}
         <div className="mb-8 border-b border-gray-200">

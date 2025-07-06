@@ -34,5 +34,11 @@
       "step5": "添加描述并发布",
       "button": "我知道了"
     }
+  },
+  "countdown": {
+    "limitedOffer": "限时优惠！",
+    "productOffer": "Meowtica 智能中枢 - 5折优惠",
+    "hurryMessage": "抓紧时间！此优惠活动将在以下时间结束：",
+    "dontMiss": "不要错过这个绝佳的省钱机会！"
   }
 }

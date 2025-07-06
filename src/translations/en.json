@@ -34,5 +34,11 @@
       "step5": "Add description and publish",
       "button": "Got it"
     }
+  },
+  "countdown": {
+    "limitedOffer": "LIMITED TIME OFFER!",
+    "productOffer": "Meowtica Smart Hub - 50% OFF",
+    "hurryMessage": "Hurry! This amazing deal ends in:",
+    "dontMiss": "Don't miss out on this incredible savings!"
   }
 }
