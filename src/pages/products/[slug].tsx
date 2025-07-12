@@ -9,6 +9,7 @@ import { Carousel } from 'react-responsive-carousel';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import clsx from 'clsx';
 import ShareButtons from '@/components/ShareButtons';
+import CountdownBanner from '@/components/CountdownBanner';
 
 type Section = 'overview' | 'features' | 'reviews' | 'faq' | 'specs' | 'warranty' | 'guide';
 
@@ -166,6 +167,9 @@ export default function ProductDetail() {
             ))}
           </nav>
         </div>
+
+        {/* 倒计时横幅 */}
+        <CountdownBanner productSlug={slug as string} />
 
         {/* 主要内容区域 */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
